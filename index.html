@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме - Азарій Ніколенко</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+        <h1>Азарій Ніколенко</h1>
+        <p>Студент спеціальності "Кібербезпека"</p>
+        <button id="theme-toggle">Змінити тему</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Контактна інформація</h2>
+            <ul>
+                <li>Місто: Львів</li>
+                <li>Телефон: 095-833-57-73</li>
+                <li>Email: nikolenkoazar@gmail.com</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Освіта та досвід роботи</h2>
+            <p><strong>ВСП АДФК НУ"ЛП"</strong></p>
+            <p>Спеціальність 274 "Обслуговування та ремонт автомобілів та двигунів", 2020-2024</p>
+            <p><strong>НУ "Львівська політехніка"</strong></p>
+            <p>Спеціальність 125 "Кібербезпека", 2024 - дотепер</p>
+            <p><strong>ПАТ "VST Bank"</strong></p>
+            <p>Економіст, відділ еквайрингу, 2022-2024 </p>
+            <p>Архіваріус, 2024-дотепер</p>
+        </section>
+
+        <section>
+            <h2>Навички та інтереси</h2>
+            <ul>
+                <li>Основи OSINT та кібербезпеки</li>
+                <li>Армреслінг, інвестування, філософія стоїцизму</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Відгуки попередніх роботодавців</h2>
+            <div id="comments-section"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Створено для лабораторної роботи №4</p>
+        <p id="footer-info" style="font-size: 0.8em; color: gray;"></p>
+    </footer>
+
+  </div>
+
+  <div id="feedback-modal" class="modal">
+      <div class="modal-content">
+          <span id="close-modal" class="close-btn">&times;</span>
+          <h2>Зв'язатися зі мною</h2>
+          
+          <form action="https://formspree.io/f/mzdjyznj" method="POST">
+              <label>Ім'я: <input type="text" name="name" required></label><br><br>
+              <label>Email: <input type="email" name="email" required></label><br><br>
+              <label>Телефон: <input type="tel" name="phone"></label><br><br>
+              <label>Текст: <textarea name="message" required></textarea></label><br><br>
+              <button type="submit">Відправити</button>
+          </form>
+      </div>
+  </div>
+
+</body>
+</html>
