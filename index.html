@@ -3,53 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Резюме - Азарій Ніколенко</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
   <div class="container">
+      
+    <div class="theme-switch-container">
+        <label id="theme-switch" class="switch">
+            <input type="checkbox">
+            <span class="slider round">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </span>
+        </label>
+    </div>
 
-    <header>
-        <h1>Азарій Ніколенко</h1>
-        <p>Студент спеціальності "Кібербезпека"</p>
-        <button id="theme-toggle">Змінити тему</button>
-    </header>
+    <div class="resume-wrapper">
 
-    <main>
-        <section>
-            <h2>Контактна інформація</h2>
-            <ul>
-                <li>Місто: Львів</li>
-                <li>Телефон: 095-833-57-73</li>
-                <li>Email: nikolenkoazar@gmail.com</li>
-            </ul>
-        </section>
+        <aside class="sidebar">
+            <div class="photo-container">
+		<img src="photo.jpg" alt="Азарій Ніколенко" class="profile-photo">
+                </div>
 
-        <section>
-            <h2>Освіта та досвід роботи</h2>
-            <p><strong>ВСП АДФК НУ"ЛП"</strong></p>
-            <p>Спеціальність 274 "Обслуговування та ремонт автомобілів та двигунів", 2020-2024</p>
-            <p><strong>НУ "Львівська політехніка"</strong></p>
-            <p>Спеціальність 125 "Кібербезпека", 2024 - дотепер</p>
-            <p><strong>ПАТ "VST Bank"</strong></p>
-            <p>Економіст, відділ еквайрингу, 2022-2024 </p>
-            <p>Архіваріус, 2024-дотепер</p>
-        </section>
+            <section class="sidebar-section">
+                <h3>Контактна інформація</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Львів</li>
+                    <li><i class="fas fa-phone"></i> 095-833-57-73</li>
+                    <li><i class="fas fa-envelope"></i> nikolenkoazar@gmail.com</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Навички та інтереси</h2>
-            <ul>
-                <li>Основи OSINT та кібербезпеки</li>
-                <li>Армреслінг, інвестування, філософія стоїцизму</li>
-            </ul>
-        </section>
+            <section class="sidebar-section">
+                <h3>Навички та інтереси</h3>
+                <ul class="skills-list">
+                    <li>Основи OSINT</li>
+                    <li>Кібербезпека</li>
+                    <li>Армреслінг</li>
+                    <li>Інвестування</li>
+                    <li>Філософія стоїцизму</li>
+                </ul>
+            </section>
+        </aside>
 
-        <section>
-            <h2>Відгуки попередніх роботодавців</h2>
-            <div id="comments-section"></div>
-        </section>
-    </main>
+        <main class="main-content">
+            <header>
+                <h1>Азарій Ніколенко</h1>
+                <p class="title">Студент спеціальності "Кібербезпека"</p>
+            </header>
+
+            <section class="main-section">
+                <h2>Освіта</h2>
+                <div class="experience-item">
+                    <h4>ВСП АДФК НУ"ЛП"</h4>
+                    <p class="info">274 "Обслуговування та ремонт автомобілів...", 2020-2024</p>
+                </div>
+                <div class="experience-item">
+                    <h4>НУ "Львівська політехніка"</h4>
+                    <p class="info">Спеціальність 125 "Кібербезпека", 2024 - дотепер</p>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <h2>Досвід роботи</h2>
+                <div class="experience-item">
+                    <h4>ПАТ "VST Bank"</h4>
+                    <p class="role">Економіст, відділ еквайрингу, 2022-2024</p>
+                    <p class="role">Архіваріус, 2024-дотепер</p>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <h2>Відгуки попередніх роботодавців</h2>
+                <div id="comments-section" class="comments-grid">
+                    </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>Створено для лабораторної роботи №4</p>
